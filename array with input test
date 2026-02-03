@@ -1,0 +1,20 @@
+
+#include<iostream>
+#include <string>
+using namespace std;
+
+int main()
+{   
+    
+    int i;
+    std::cout << "0-2: ";
+    std::cin >> i;
+    std::string car[] = {"corvette", "porsche", "mustang"};
+    if(i < 0 || i > 2){
+        std::cout << "invalid";}
+    else{
+        cout << car[i] << '\n';}
+    
+  
+    return 0;
+}
