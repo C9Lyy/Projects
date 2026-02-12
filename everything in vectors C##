@@ -1,0 +1,25 @@
+
+
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#include<functional>
+using namespace std;
+
+int main()
+{
+    std::vector<int> vec = {5, 2, 33, 45, 5, 6};
+    //vec.push_back(100);
+    //vec.insert(vec.begin() + 2, 67);
+    //vec.erase(vec.begin() + 2);
+    //vec.pop_back();
+   
+    //int size = vec.size();
+   // std::cout << size;
+   std::sort(vec.begin(), vec.end(), greater<int>());
+   for(int x : vec){
+    std::cout << x << endl;
+    }
+    
+    return 0;
+}
